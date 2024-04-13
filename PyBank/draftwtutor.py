@@ -29,6 +29,9 @@ with open(csvpath) as csvfile:
 
 
 #read each row of data after the header
+#loop through to find 
+#Calculate for PyBank
+#   Total number of months included in data set
 
     for row in csvreader:
       
@@ -42,19 +45,22 @@ with open(csvpath) as csvfile:
 
      
 
-     #greatest_increase = [net_change] >= 
+     #greatest_increase[1] = int(row[1]) - prev_net
+     
 
-    #greatest_decrease <= [net_change]
+#if net_change >= greatest_increase[1]:
+    #greatest_increase = [month_of_change, net_change]
+
+     #greatest_decrease <= [net_change]
 
 
     print(net_change)
     print(total_months)
     print(total_net)
+    #print(greatest_increase)
 
-#loop through to find the below calculations
 
-#Calculate for PyBank
-#   Total number of months included in data set
+
 
 
 #   net change in Profit/Loss over the whole period
